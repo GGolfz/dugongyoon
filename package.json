@@ -1,10 +1,12 @@
 {
+  "homepage": "http://ggolfz.github.io/dugongyoon",
   "name": "dugongyoon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "react": "^16.11.0",
     "react-animation": "^1.2.2",
@@ -20,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
